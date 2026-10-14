@@ -1,0 +1,74 @@
+# ============================================================
+# SHEIN 选品工作台 · .gitignore
+# ============================================================
+# 原则：**代码和数据分开**
+#   代码（shein_scout/、*.py）    -> 传
+#   数据（图、标签、配置）         -> 不传
+# ============================================================
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# ---------- ★ 绝对不传：含 API key ----------
+配置.json
+config.local.json
+*.key
+.env
+.env.*
+
+# ---------- 数据目录（体积大 / 是你的经营资产）----------
+# 图片
+patterns/
+存档/
+已选/
+回收站/
+archive/
+pool/
+adjusted/
+choice/
+imported/
+data_parts/
+runs/
+samples/*
+!samples/README.md
+!samples/过审/README.md
+!samples/被刷/README.md
+
+# 缩略图和缓存
+_缩略图/
+work/cache/
+work/tag_cache/
+work/vlm_cache/
+work/main_images/
+work/spec_parts/
+__pycache__/
+
+# 生成的数据（AI 成果，属于你的资产，不公开）
+work/controlled_tags.json
+work/titles.json
+work/标签词表.json
+work/preference/
+work/清理清单.json
+
+# 用户数据
+我的标签集.json
+已用清单.txt
+日志/
+备份/
+
+# ---------- 日志和临时 ----------
+*.log
+*.tmp
+~$*
+
+# ---------- 编辑器 ----------
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db

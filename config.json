@@ -1,0 +1,7 @@
+{
+  "approved_dirs": ["samples/过审"],
+  "rejected_dirs": ["samples/被刷"],
+  "reference_dirs": [],
+  "note": "把图放进 samples/过审 与 samples/被刷，再跑 python -m shein_scout build",
+  "_note": "本仓库不含作者训练用的真实店铺数据。配图行为会因样本不同而不同，属正常现象。"
+}
